@@ -163,7 +163,6 @@ ul li a:hover {
 .btn_spotify {
   color: var(--text-color-spotify);
   background-color: green;
-  border-radius: 8px;
 }
 
 #social-links {
