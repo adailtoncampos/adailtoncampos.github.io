@@ -78,15 +78,16 @@ body * {
 /* AGENDA ===================*/
 
 .slider {
-  width: 300px; /* Defina a largura do slider conforme desejado */
-  margin: 20px auto;
+  width: 100%; /* Defina a largura do slider conforme desejado */
+  margin: 20px auto 0px;
   overflow: hidden;
   position: relative;
 }
 
 .evento {
   width: 100%;
-  padding: 10px;
+  padding: 18px;
+  border-radius: 8px;
 }
 
 .evento:first-child {
@@ -99,21 +100,21 @@ body * {
   font-weight: bold;
   display: block;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .cidade,
 .igreja {
   display: block;
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .btn {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
-  padding: 10px 10px;
+  padding: 10px 10%;
   border: none;
   border-radius: 50%;
   position: absolute;
