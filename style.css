@@ -66,7 +66,8 @@ body * {
   color: var(--text-color-sub);
 }
 
-/* AGENDA */
+/* AGENDA ===================*/
+
 .slider {
   width: 300px; /* Defina a largura do slider conforme desejado */
   margin: 20px auto;
@@ -105,6 +106,7 @@ body * {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 18px;
 }
 
 .btn-prev {
