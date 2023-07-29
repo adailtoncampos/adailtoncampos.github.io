@@ -34,7 +34,8 @@ body {
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   color: var(--text-color);
 }
 #container {
@@ -59,10 +60,18 @@ body * {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+  font-size: 18px;
 }
 
-#profile span {
+#infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infos p {
   font-size: 12px;
+  text-align: center;
   color: var(--text-color-sub);
 }
 
@@ -85,24 +94,28 @@ body * {
 }
 
 .data {
+  font-family: 'Inter', sans-serif;
+
   font-weight: bold;
   display: block;
   text-align: center;
+  font-size: 14px;
 }
 
 .cidade,
 .igreja {
   display: block;
   text-align: center;
+  font-weight: 200;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #007bff00;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -117,26 +130,13 @@ body * {
   right: 0;
 }
 
-/*INFOS E BOTÃO ===================*/
-
-#infoswitch {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#infos p {
-  font-size: 12px;
-  color: var(--text-color-sub);
-}
-
 /*BOTÃO ===================*/
 
 #botao {
-  display: flex;
-  justify-content: center;
-  padding: 24px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 34px 20px;
 }
 
 #switch {
