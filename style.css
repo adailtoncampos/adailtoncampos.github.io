@@ -206,11 +206,16 @@ ul li a {
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
+  gap: 12px;
 
   text-decoration: none;
   font-weight: 500;
 
   transition: background 0.5s;
+}
+
+ul li a i {
+  font-size: 18px;
 }
 
 ul li a:hover {
