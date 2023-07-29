@@ -110,6 +110,12 @@ body * {
   font-weight: 300;
 }
 
+.igreja {
+  font-size: 12px;
+  text-align: center;
+  color: var(--text-color-sub);
+}
+
 .btn {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
