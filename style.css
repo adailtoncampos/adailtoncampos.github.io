@@ -216,6 +216,7 @@ ul li a {
 
 ul li a i {
   font-size: 18px;
+  color: var(--text-color-spotify);
 }
 
 ul li a:hover {
