@@ -15,7 +15,7 @@
   --stroke-color: rgba(255, 255, 255, 0.15);
   --surface-color: rgb(255, 255, 255);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.098);
   --switch-bg-url: url(./assets/moon-stars.svg);
   --surface-color-switch: rgba(143, 143, 143, 0.482);
 }
@@ -183,7 +183,6 @@ body * {
 
 #switch span {
   display: block;
-  border: 1px solid red;
   width: 64px;
   height: 24px;
 
