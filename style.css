@@ -124,23 +124,28 @@ body * {
 
 .btn {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #7b7b7b32;
   color: #fff;
-  padding: 10px 10%;
+  padding: 28px 6%;
   border: none;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
 }
 
+.btn ion-icon {
+  color: var(--text-color);
+}
+
 .btn-prev {
   left: 0;
+  box-shadow: 5px 5px 15px 5px #00000042;
 }
 
 .btn-next {
   right: 0;
+  box-shadow: -5px 5px 15px 5px #00000042;
 }
 
 /*BOTÃO ===================*/
@@ -223,6 +228,11 @@ ul li a:hover {
   box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.511);
 }
 
+.btn_spotify {
+  color: var(--text-color-spotify);
+  background-color: green;
+}
+
 .fa-spotify {
   font-size: 18px;
   color: var(--text-color-spotify);
@@ -233,11 +243,6 @@ ul li a:hover {
 .fa-calendar-days {
   font-size: 18px;
   color: var(--icon-color-links);
-}
-
-.btn_spotify {
-  color: var(--text-color-spotify);
-  background-color: green;
 }
 
 .btn_deezer,
