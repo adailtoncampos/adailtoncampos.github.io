@@ -277,7 +277,27 @@ footer {
 }
 
 /* MEDIA QUERIES ==================*/
-@media (min-width: 700px) {
+@media (min-width: 400px) {
+  :root {
+    --bg-url: url(./assets/bg-mobile-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
+}
+
+@media (min-width: 620px) {
+  :root {
+    --bg-url: url(./assets/bg-tablet-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-tablet-light.jpg);
+  }
+}
+
+@media (min-width: 1180px) {
   :root {
     --bg-url: url(./assets/bg-desktop-dark.jpg);
   }
