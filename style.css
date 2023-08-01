@@ -162,7 +162,7 @@ body * {
 .igreja {
   display: block;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .igreja {
@@ -173,7 +173,7 @@ body * {
 
 .btn {
   cursor: pointer;
-  background-color: #7b7b7b32;
+  background-color: #7b7b7b52;
   color: #fff;
   padding: 28px 6%;
   border: none;
