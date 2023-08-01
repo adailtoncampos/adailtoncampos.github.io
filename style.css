@@ -12,7 +12,7 @@
   --text-color-sub: rgba(255, 255, 255, 0.3);
   --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.15);
-  --surface-color: rgba(255, 255, 255, 0.7);
+  --surface-color: rgb(255, 255, 255);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.067);
   --switch-bg-url: url(./assets/moon-stars.svg);
@@ -27,7 +27,7 @@
   --text-color-sub: rgba(0, 0, 0, 0.5);
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.075);
-  --surface-color: rgba(0, 0, 0, 0.7);
+  --surface-color: rgb(0, 0, 0);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
@@ -237,7 +237,7 @@ ul li a:hover {
 
 .btn_spotify {
   color: var(--text-color-spotify);
-  background-color: rgba(0, 128, 0, 0.8);
+  background-color: green;
 }
 
 .btn_deezer,
