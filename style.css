@@ -53,6 +53,55 @@ body * {
   padding: 0 24px;
 }
 
+/*BOTÃO ===================*/
+
+#botao {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 34px 20px;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /* FORMA DE ALINHAR POSICIONAMENTO ABSOLUTO*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slider-back 0.2s;
+}
+
+.light #switch button {
+  animation: slider-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+
+  background: var(--surface-color-switch);
+  border: 1px solid var(--stroke-color);
+  border-radius: 9999px;
+}
+
 /* PERFIL ===================*/
 
 #profile {
@@ -148,55 +197,6 @@ body * {
   box-shadow: -5px 5px 15px 5px #00000042;
 }
 
-/*BOTÃO ===================*/
-
-#botao {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 34px 20px;
-}
-
-#switch {
-  position: relative;
-  width: 64px;
-}
-
-#switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
-  border: 0;
-  border-radius: 50%;
-
-  /* FORMA DE ALINHAR POSICIONAMENTO ABSOLUTO*/
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-  transform: translateY(-50%);
-
-  animation: slider-back 0.2s;
-}
-
-.light #switch button {
-  animation: slider-in 0.4s forwards;
-}
-
-#switch button:hover {
-  outline: 8px solid var(--highlight-color);
-}
-
-#switch span {
-  display: block;
-  width: 64px;
-  height: 24px;
-
-  background: var(--surface-color-switch);
-  border: 1px solid var(--stroke-color);
-  border-radius: 9999px;
-}
-
 /*LINKS ===================*/
 
 ul {
@@ -230,7 +230,7 @@ ul li a:hover {
 
 .btn_spotify {
   color: var(--text-color-spotify);
-  background-color: green;
+  background: rgb(1, 170, 60);
 }
 
 .fa-spotify {
