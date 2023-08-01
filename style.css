@@ -7,15 +7,14 @@
 :root {
   --text-color: rgb(255, 255, 255);
   --text-color-spotify: rgb(255, 255, 255);
-  --text-color-deezer: rgb(0, 0, 0);
-  --text-color-applemusic: rgb(0, 0, 0);
-  --text-color-convite: rgb(0, 0, 0);
+  --text-color-links: rgb(0, 0, 0);
+  --icon-color-links: rgb(0, 0, 0);
   --text-color-sub: rgba(255, 255, 255, 0.3);
   --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.15);
   --surface-color: rgb(255, 255, 255);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.098);
+  --highlight-color: rgba(255, 255, 255, 0.067);
   --switch-bg-url: url(./assets/moon-stars.svg);
   --surface-color-switch: rgba(143, 143, 143, 0.482);
 }
@@ -23,9 +22,8 @@
 .light {
   --text-color: black;
   --text-color-spotify: rgb(255, 255, 255);
-  --text-color-deezer: rgb(255, 255, 255);
-  --text-color-applemusic: rgb(255, 255, 255);
-  --text-color-convite: rgb(255, 255, 255);
+  --text-color-links: rgb(255, 255, 255);
+  --icon-color-links: rgb(255, 255, 255);
   --text-color-sub: rgba(0, 0, 0, 0.5);
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.075);
@@ -92,6 +90,9 @@ body * {
   margin: 50px auto 0px;
   overflow: hidden;
   position: relative;
+
+  background: var(--highlight-color);
+  border-radius: 8px;
 }
 
 .evento {
@@ -218,14 +219,16 @@ ul li a {
   transition: background 0.5s;
 }
 
-ul li a i {
+.fa-spotify {
   font-size: 18px;
   color: var(--text-color-spotify);
 }
 
-ul li a:hover {
-  /* background: var(--surface-color-hover); */
-  border: 1px solid var(--text-color);
+.fa-deezer,
+.fa-apple,
+.fa-calendar-days {
+  font-size: 18px;
+  color: var(--icon-color-links);
 }
 
 .btn_spotify {
@@ -233,17 +236,13 @@ ul li a:hover {
   background-color: green;
 }
 
-.btn_deezer {
-  color: var(--text-color-deezer);
-}
-
-.btn_applemusic {
-  color: var(--text-color-applemusic);
-}
-
+.btn_deezer,
+.btn_applemusic,
 .btn_convite {
-  color: var(--text-color-convite);
+  color: var(--text-color-links);
 }
+
+/* SOCIAL LINKS ==================================== */
 
 #social-links {
   display: flex;
